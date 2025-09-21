@@ -322,6 +322,19 @@ const Portfolio = () => {
           <div className="space-y-4 px-4 max-w-4xl mx-auto">
             {[
               {
+                title: "Software Developer Intern",
+                company: "Blackstraw AI",
+                period: "Aug 2025 - Present",
+                points: [
+                  "Developed RAG (Retrieval-Augmented Generation) agents for context-aware information retrieval and AI generation.",
+                  "Integrated AI solutions with Azure Foundry for scalable deployment and orchestration.",
+                  "Built APIs and microservices using Python & FastAPI for AI model interaction."
+                  "Conducted data exploration and preprocessing to support AI workflows."                  
+                  "Rapidly learned and applied Generative AI techniques to real-world projects."
+                  "Gained hands-on experience in end-to-end AI solution deployment, from data to production."
+                ]
+              },
+              {
                 title: "Web Development Intern",
                 company: "Triad Software Pvt Ltd",
                 period: "Feb 2023 - March 2023",
