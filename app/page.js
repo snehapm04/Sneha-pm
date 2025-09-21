@@ -109,7 +109,7 @@ const Portfolio = () => {
               }`}
             >
               <Image
-                src="/profile-pic.jpg"
+                src="/IMG-20250904-WA0001.jpg"
                 alt="Sneha's Profile Picture"
                 fill
                 className="object-cover"
