@@ -1,12 +1,8 @@
 "use client";
-
 import { motion } from "framer-motion";
 import Image from "next/image";
-
 export default function About({ theme, textVariants }) {
-
 return(
-
 <motion.section
 
 initial="hidden"
@@ -48,30 +44,19 @@ ${theme==="dark"
 `}>
 
 Hi, I am{" "}
-
 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">
-
 Sneha
-
 </span>
-
 </h1>
 
-
-
 {/* Role Line */}
-
 <p className={`text-lg md:text-xl font-semibold mb-6
-
 ${theme==="dark"
 ? "text-blue-400"
 : "text-blue-600"
 }
-
 `}>
-
 AI Engineer • Full Stack Developer • Problem Solver
-
 </p>
 
 
@@ -79,15 +64,10 @@ AI Engineer • Full Stack Developer • Problem Solver
 {/* Profile Image */}
 
 <div className="flex justify-center mb-6">
-
 <motion.div
-
 whileHover={{scale:1.06}}
-
 transition={{type:"spring", stiffness:200}}
-
 className={`relative w-40 h-40 md:w-44 md:h-44 rounded-full overflow-hidden
-
 border-4 shadow-xl
 
 ${theme==="dark"
@@ -101,14 +81,11 @@ ${theme==="dark"
 
 
 {/* Glow Ring */}
-
 <div className={`absolute inset-0 rounded-full blur-md opacity-40
-
 ${theme==="dark"
 ? "bg-blue-500"
 : "bg-blue-300"
 }
-
 `} />
 
 
@@ -170,45 +147,26 @@ theme==="dark"
 }
 
 `}
-
 >
-
 Download Resume
-
 </motion.a>
 
-
-
 <motion.a
-
 whileHover={{scale:1.05}}
 whileTap={{scale:0.95}}
-
 href="#contact"
-
 className={`py-2.5 px-6 rounded-md text-sm font-semibold border transition
-
 ${
 theme==="dark"
 ? "border-blue-400 text-blue-400 hover:bg-blue-900/30"
 : "border-blue-600 text-blue-600 hover:bg-blue-50"
 }
-
 `}
-
 >
-
 Contact Me
-
 </motion.a>
-
-
 </div>
-
-
-
 </motion.section>
-
 )
 
 }

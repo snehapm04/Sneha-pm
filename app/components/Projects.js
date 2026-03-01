@@ -35,6 +35,25 @@ link:"https://github.com/snehapm04/Next-Word-Prediction-using-LSTM",
 category:"AI&ML",
 tags:["LSTM","DeepLearning"]
 },
+{
+title:"Multimodal RAG Research Assistant",
+
+description:
+"Multimodal RAG system for research papers with PDF parsing, image and table extraction, FAISS-based retrieval, and AI-powered question answering via Streamlit interface.",
+image:"/multimodal_rag.jpg",
+link:"https://github.com/snehapm04/MultiModal-RAG",
+category:"Exploration...",
+tags:["Python","RAG","FAISS","NLP","LLM","Streamlit","Research AI"
+]
+},
+{
+title:"Disease Outbreak Prediction Using ML",
+description:"ML-based healthcare prediction system for Heart Disease, Parkinson’s, and Diabetes with real-time predictions.",
+image:"/disease.jpg",
+link:"https://github.com/snehapm04/Multiple-Disease-Prediction",
+category:"Exploration...",
+tags:["pandas","ML","sckit-learn","seaborn","matplotlib","logistic regression","random forest","SVM","streamlit"]
+},
 
 {
 title:"Synthetic Data Generation",
