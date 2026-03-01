@@ -68,8 +68,7 @@ const Portfolio = ()=>{
                         transition: {
                             duration: 0.5
                         },
-                        className: `text-2xl md:text-3xl font-bold mb-4 md:mb-0 tracking-tight ${theme === 'dark' ? 'text-blue-400' : 'text-blue-600'}`,
-                        children: "Sneha's Portfolio"
+                        className: `text-2xl md:text-3xl font-bold mb-4 md:mb-0 tracking-tight ${theme === 'dark' ? 'text-blue-400' : 'text-blue-600'}`
                     }, void 0, false, {
                         fileName: "[project]/app/page.js",
                         lineNumber: 40,
