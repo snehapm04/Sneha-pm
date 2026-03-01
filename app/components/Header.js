@@ -2,80 +2,139 @@
 
 import { motion } from "framer-motion";
 import { Sun, Moon } from "lucide-react";
-
+import Link from "next/link";
 export default function Header({ theme, toggleTheme }) {
 
+const navItems = [
+  "Skills",
+  "Education",
+  "Projects",
+  "Experience",
+  "Activities",
+  "Certifications",
+  "Contact"
+];
+
+
+<Link href="/projects">Projects</Link>
 return (
 
-<header className={`flex flex-col md:flex-row justify-between items-center px-6 md:px-8 py-5 border-b sticky top-0 z-50 backdrop-blur-sm transition-colors duration-300 ${
-  theme === 'dark'
-    ? 'border-slate-700 bg-slate-800/95'
-    : 'border-neutral-200 bg-white/95'
-}`}>
-  <motion.div
-    initial={{ opacity: 0, x: -20 }}
-    animate={{ opacity: 1, x: 0 }}
-    transition={{ duration: 0.5 }}
-    className={`text-2xl md:text-3xl font-bold mb-4 md:mb-0 tracking-tight ${
-      theme === 'dark' ? 'text-blue-400' : 'text-blue-600'
-    }`}
-  >
-    
-  </motion.div>
+<header className={`sticky top-0 z-50 backdrop-blur-xl border-b transition-all duration-300
 
-  <div className="flex items-center gap-6">
+${
+theme === 'dark'
+? 'bg-slate-900/80 border-slate-700'
+: 'bg-white/80 border-neutral-200'
+}
 
-    <nav className="w-full md:w-auto">
+`}>
 
-      <ul className="flex flex-wrap justify-center gap-4 md:gap-8 text-sm md:text-base">
+<div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
 
-        {['Skills','Education','Projects','Experience','Activities','Contact'].map((item)=>(
-          
-          <motion.li
-            key={item}
-            whileHover={{ scale:1.05 }}
-            whileTap={{ scale:0.95 }}
-          >
+{/* Logo / Name */}
 
-            <a
-              href={`#${item.toLowerCase()}`}
-              className={`font-medium tracking-wide transition-colors ${
-                theme === 'dark'
-                ? 'text-slate-300 hover:text-blue-400'
-                : 'text-slate-600 hover:text-blue-500'
-              }`}
-            >
-              {item}
-            </a>
+<motion.div
+initial={{opacity:0,x:-20}}
+animate={{opacity:1,x:0}}
+className={`text-xl md:text-2xl font-bold tracking-tight cursor-pointer
 
-          </motion.li>
+${theme === 'dark'
+? 'text-blue-400'
+: 'text-blue-600'
+}
 
-        ))}
+`}
+>
 
-      </ul>
+Sneha
 
-    </nav>
+</motion.div>
 
 
-    <motion.button
-      whileHover={{ scale:1.1 }}
-      whileTap={{ scale:0.9 }}
-      onClick={toggleTheme}
-      className={`p-2 rounded-full transition-colors ${
-        theme === 'dark'
-        ? 'text-blue-400 hover:bg-slate-700'
-        : 'text-blue-600 hover:bg-neutral-100'
-      }`}
-    >
+{/* Navigation */}
 
-      {theme === 'dark'
-        ? <Sun size={20}/>
-        : <Moon size={20}/>
-      }
+<nav className="hidden md:block">
 
-    </motion.button>
+<ul className="flex gap-8 text-sm font-medium">
 
-  </div>
+{navItems.map((item)=> (
+
+<motion.li
+key={item}
+className="relative group"
+whileHover={{ y:-2 }}
+>
+
+<a
+href={`#${item.toLowerCase()}`}
+className={`transition-colors duration-300
+
+${theme === 'dark'
+? 'text-slate-300 group-hover:text-blue-400'
+: 'text-slate-600 group-hover:text-blue-600'
+}
+
+`}
+>
+
+{item}
+
+</a>
+
+
+{/* Animated Underline */}
+
+<span className={`absolute left-0 -bottom-1 h-[2px] w-0 transition-all duration-300 group-hover:w-full
+
+${theme === 'dark'
+? 'bg-blue-400'
+: 'bg-blue-600'
+}
+
+`} />
+
+</motion.li>
+
+))}
+
+</ul>
+
+</nav>
+
+
+{/* Right Side */}
+
+<div className="flex items-center gap-4">
+
+
+{/* Theme Toggle */}
+
+<motion.button
+whileHover={{scale:1.1}}
+whileTap={{scale:0.9}}
+onClick={toggleTheme}
+
+className={`p-2 rounded-full transition-all
+
+${
+theme === 'dark'
+? 'text-blue-400 hover:bg-slate-800'
+: 'text-blue-600 hover:bg-neutral-100'
+}
+
+`}
+>
+
+{theme === 'dark'
+? <Sun size={20}/>
+: <Moon size={20}/>
+}
+
+</motion.button>
+
+</div>
+
+</div>
 
 </header>
 

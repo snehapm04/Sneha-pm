@@ -10,7 +10,8 @@ import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-
+import Activities from "./components/Activities";
+import Certifications from "./components/Certifications";
 export default function Portfolio() {
 
   const [theme, setTheme] = useState('dark');
@@ -52,8 +53,13 @@ theme === 'dark'
 
 <Experience theme={theme} textVariants={textVariants} />
 
-<Projects theme={theme} textVariants={textVariants} />
-
+<Projects
+theme={theme}
+textVariants={textVariants}
+home={true}
+/>
+<Activities theme={theme} textVariants={textVariants}/>
+<Certifications theme={theme} textVariants={textVariants} />
 <Contact theme={theme} textVariants={textVariants} />
 
 </main>
