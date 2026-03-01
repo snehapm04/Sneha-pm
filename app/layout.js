@@ -1,6 +1,6 @@
 import { Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
-import ThreeStars from "./components/Threebg";
+
 
 const inter = Inter({
   subsets: ["latin"],
@@ -37,7 +37,7 @@ export default function RootLayout({ children }) {
         font-body
         `}
       >
-        <ThreeStars theme="dark" />
+    
         <div className="relative z-10">{children}</div>
       </body>
     </html>

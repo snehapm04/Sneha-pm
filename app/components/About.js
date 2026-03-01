@@ -19,7 +19,6 @@ className="text-center relative mt-6"
 
 >
 
-
 {/* Soft Background Glow */}
 
 <div className="absolute inset-0 flex justify-center pointer-events-none">
@@ -148,37 +147,6 @@ Retrieval-Augmented Generation pipelines, and full-stack intelligent platforms.
 
 {/* Highlights */}
 
-<div className={`flex flex-wrap justify-center gap-3 text-sm mb-6
-
-${theme==="dark"
-? "text-slate-300"
-: "text-slate-700"
-}
-
-`}>
-
-<span className="px-3 py-1 rounded-full border">
-RAG Systems
-</span>
-
-<span className="px-3 py-1 rounded-full border">
-FastAPI
-</span>
-
-<span className="px-3 py-1 rounded-full border">
-Deep Learning
-</span>
-
-<span className="px-3 py-1 rounded-full border">
-Full Stack
-</span>
-
-<span className="px-3 py-1 rounded-full border">
-Azure AI
-</span>
-
-</div>
-
 
 
 {/* Buttons */}
@@ -237,22 +205,6 @@ Contact Me
 
 </div>
 
-
-
-{/* Bottom Line */}
-
-<p className={`mt-6 text-xs
-
-${theme==="dark"
-? "text-slate-500"
-: "text-slate-500"
-}
-
-`}>
-
-Building AI solutions that solve real-world problems 🚀
-
-</p>
 
 
 </motion.section>
