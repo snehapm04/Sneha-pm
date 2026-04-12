@@ -1,7 +1,6 @@
 import { Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 
-
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-body",
@@ -12,7 +11,6 @@ const spaceGrotesk = Space_Grotesk({
   variable: "--font-heading",
 });
 
-
 export const metadata = {
   title: "Sneha M | AI & Full Stack Developer",
   description:
@@ -20,10 +18,7 @@ export const metadata = {
   icons: {
     icon: "/icon.png",
   },
-  
 };
-
-
 
 export default function RootLayout({ children }) {
   return (
@@ -37,12 +32,10 @@ export default function RootLayout({ children }) {
         font-body
         `}
       >
-    
         <div className="relative z-10">{children}</div>
       </body>
     </html>
   );
-
 }
 export function generateViewport() {
   return {

@@ -3,34 +3,33 @@
 import { motion } from "framer-motion";
 import { GraduationCap, Brain, Trophy, Users } from "lucide-react";
 
-export default function Activities({ theme, textVariants }) {
-  const activities = [
+export default function Achievements({ theme, textVariants }) {
+  const achievements = [
     {
-      title: "AI Workshop Mentor",
-      desc: "Conducted an interactive AI workshop for 10th-grade students including computer vision demos, model training basics, tech quiz, and AI ethics discussions.",
-      tag: "Mentor",
-      icon: <GraduationCap size={18} />,
-    },
-
-    {
-      title: "BITS Hyderabad Hackathon",
-      desc: "Built a Generative AI synthetic data generator in a 24-hour hackathon with rapid prototyping and model experimentation.",
-      tag: "Hackathon",
-      icon: <Brain size={18} />,
-    },
-
-    {
-      title: "Technical Event Head – ATLAS",
-      desc: "Led and organized the first AIML departmental symposium, managing technical events and team coordination.",
-      tag: "Leadership",
-      icon: <Users size={18} />,
-    },
-
-    {
-      title: "CodHer'24 Hackathon",
-      desc: "Developed a Diabetes Prediction web system using Django during a 24-hour ACM women-only hackathon.",
-      tag: "Hackathon",
+      title: "IndiaAI Fellowship Recipient",
+      desc: (
+        <ul className="list-disc pl-5 space-y-1">
+          <li>Selected for a competitive fellowship by the Government of India (IndiaAI).</li>
+          <li>Awarded ₹1,00,000 grant for research and development.</li>
+          <li>Project: <b>AI-based speech enhancement system for Parkinson’s dysarthria</b> using encoder–decoder architecture and neural vocoders.</li>
+          <li>Recognized for innovation in healthcare AI solutions.</li>
+        </ul>
+      ),
+      tag: "Fellowship",
       icon: <Trophy size={18} />,
+    },
+    {
+      title: "IEEE Conference Paper Acceptance",
+      desc: (
+        <ul className="list-disc pl-5 space-y-1">
+          <li>Paper accepted at <b>ICPSCN 2026 (IEEE Conference)</b>.</li>
+          <li>Title: <i>Attention-Guided Acoustic Normalization of Parkinsonian Dysarthric Speech with Cross-Vocoder Evaluation</i>.</li>
+          <li>Presented novel methods for improving speech intelligibility in Parkinson’s patients.</li>
+          <li>Peer-reviewed and published in IEEE Xplore.</li>
+        </ul>
+      ),
+      tag: "Conference",
+      icon: <GraduationCap size={18} />,
     },
   ];
 
@@ -41,7 +40,7 @@ export default function Activities({ theme, textVariants }) {
       viewport={{ once: true }}
       variants={textVariants}
       transition={{ duration: 0.6 }}
-      id="activities"
+      id="achievements"
       className="text-center mt-20"
     >
       {/* Title */}
@@ -51,7 +50,7 @@ export default function Activities({ theme, textVariants }) {
           theme === "dark" ? "text-blue-400" : "text-blue-600"
         }`}
       >
-        Activities & Leadership
+        Achievements
       </h2>
 
       <p
@@ -59,7 +58,7 @@ export default function Activities({ theme, textVariants }) {
           theme === "dark" ? "text-slate-400" : "text-slate-600"
         }`}
       >
-        Workshops • Hackathons • Leadership
+        Fellowships • Conferences
       </p>
 
       <div className="max-w-4xl mx-auto relative">
@@ -72,7 +71,7 @@ export default function Activities({ theme, textVariants }) {
         />
 
         <div className="space-y-8 text-left">
-          {activities.map((act, index) => (
+          {achievements.map((act, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 30 }}
@@ -126,18 +125,14 @@ ${theme === "dark" ? "bg-blue-900 text-blue-300" : "bg-blue-100 text-blue-700"}
                     {act.tag}
                   </span>
                 </div>
-
                 {/* Description */}
-
-                <p
+                <div
                   className={`text-sm leading-relaxed
-
 ${theme === "dark" ? "text-slate-300" : "text-slate-700"}
-
 `}
                 >
                   {act.desc}
-                </p>
+                </div>
               </motion.div>
             </motion.div>
           ))}

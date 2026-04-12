@@ -23,7 +23,6 @@ export default function Education({ theme, textVariants }) {
       </h2>
 
       <div className="grid gap-6 md:grid-cols-2 px-4 max-w-5xl mx-auto">
-
         {[
           {
             degree: "B.E. Computer Science and Engineering",
@@ -35,8 +34,8 @@ export default function Education({ theme, textVariants }) {
               "Machine Learning",
               "Deep Learning",
               "Data Structures & Algorithms",
-              "Artificial Intelligence"
-            ]
+              "Artificial Intelligence",
+            ],
           },
           {
             degree: "Higher Secondary Education",
@@ -48,11 +47,10 @@ export default function Education({ theme, textVariants }) {
               "Mathematics",
               "Computer Science",
               "Physics",
-              "Chemistry"
-            ]
-          }
+              "Chemistry",
+            ],
+          },
         ].map((edu, index) => (
-
           <motion.div
             key={index}
             initial={{ opacity: 0, y: 20 }}
@@ -61,7 +59,7 @@ export default function Education({ theme, textVariants }) {
             transition={{ duration: 0.5, delay: index * 0.2 }}
             whileHover={{
               y: -6,
-              scale: 1.02
+              scale: 1.02,
             }}
             className={`p-6 rounded-xl shadow-lg border transition-all duration-300 text-left ${
               theme === "dark"
@@ -69,7 +67,6 @@ export default function Education({ theme, textVariants }) {
                 : "bg-white border-neutral-200 hover:border-blue-400"
             }`}
           >
-
             {/* Degree */}
             <h3
               className={`text-xl md:text-2xl font-semibold mb-2 ${
@@ -90,7 +87,6 @@ export default function Education({ theme, textVariants }) {
 
             {/* Period + CGPA Row */}
             <div className="flex justify-between items-center mt-2 mb-4">
-
               <span
                 className={`text-sm ${
                   theme === "dark" ? "text-slate-400" : "text-slate-600"
@@ -109,15 +105,11 @@ export default function Education({ theme, textVariants }) {
               >
                 {edu.cgpa}
               </span>
-
             </div>
-
 
             {/* Highlights */}
             <div className="flex flex-wrap gap-2 mb-4">
-
               {edu.highlights.map((tag, i) => (
-
                 <span
                   key={i}
                   className={`text-xs px-3 py-1 rounded-full ${
@@ -128,20 +120,14 @@ export default function Education({ theme, textVariants }) {
                 >
                   {tag}
                 </span>
-
               ))}
-
             </div>
-
 
             {/* Coursework */}
             <div>
-
               <p
                 className={`text-sm font-semibold mb-2 ${
-                  theme === "dark"
-                    ? "text-slate-300"
-                    : "text-slate-700"
+                  theme === "dark" ? "text-slate-300" : "text-slate-700"
                 }`}
               >
                 Key Coursework
@@ -149,24 +135,17 @@ export default function Education({ theme, textVariants }) {
 
               <ul
                 className={`text-sm space-y-1 ${
-                  theme === "dark"
-                    ? "text-slate-400"
-                    : "text-slate-600"
+                  theme === "dark" ? "text-slate-400" : "text-slate-600"
                 }`}
               >
                 {edu.details.map((detail, i) => (
                   <li key={i}>• {detail}</li>
                 ))}
               </ul>
-
             </div>
-
           </motion.div>
-
         ))}
-
       </div>
-
     </motion.section>
   );
 }
