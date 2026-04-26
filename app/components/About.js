@@ -84,15 +84,14 @@ ${theme === "dark" ? "bg-blue-500" : "bg-blue-300"}
 
       <p
         className={`text-base md:text-lg max-w-2xl mx-auto leading-relaxed mb-6
-
 ${theme === "dark" ? "text-slate-300" : "text-slate-700"}
-
 `}
       >
         Artificial Intelligence and Machine Learning student passionate about
         building real-world AI systems. Experienced in developing scalable AI
         applications, Retrieval-Augmented Generation pipelines, and full-stack
-        intelligent platforms.
+        intelligent platforms.<br />
+        <span className="font-semibold text-blue-500">Patent published:</span> Deep Learning-Based Speech Conversion for Parkinsonian Dysarthria (3 authors, paired acoustic encoder–decoder framework with multi-vocoder speech reconstruction).
       </p>
 
       {/* Highlights */}

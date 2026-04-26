@@ -6,6 +6,24 @@ import { GraduationCap, Brain, Trophy, Users } from "lucide-react";
 export default function Achievements({ theme, textVariants }) {
   const achievements = [
     {
+      title: "Patent Published: Deep Learning-Based Speech Conversion",
+      desc: (
+        <ul className="list-disc pl-5 space-y-1">
+          <li>
+            Patent published: <b>Deep Learning-Based Speech Conversion for Parkinsonian Dysarthria Using a Paired Acoustic Encoder–Decoder Framework with Multi-Vocoder Speech Reconstruction</b>.
+          </li>
+          <li>
+            Co-authored by 3 inventors.
+          </li>
+          <li>
+            Novel paired acoustic encoder–decoder framework with multi-vocoder speech reconstruction for Parkinsonian dysarthria.
+          </li>
+        </ul>
+      ),
+      tag: "Patent",
+      icon: <Brain size={18} />,
+    },
+    {
       title: "IndiaAI Fellowship Recipient",
       desc: (
         <ul className="list-disc pl-5 space-y-1">
