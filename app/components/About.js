@@ -91,7 +91,6 @@ ${theme === "dark" ? "text-slate-300" : "text-slate-700"}
         building real-world AI systems. Experienced in developing scalable AI
         applications, Retrieval-Augmented Generation pipelines, and full-stack
         intelligent platforms.<br />
-        <span className="font-semibold text-blue-500">Patent published:</span> Deep Learning-Based Speech Conversion for Parkinsonian Dysarthria (3 authors, paired acoustic encoder–decoder framework with multi-vocoder speech reconstruction).
       </p>
 
       {/* Highlights */}

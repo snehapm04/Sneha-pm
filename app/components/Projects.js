@@ -8,15 +8,6 @@ export default function Projects({ theme, textVariants, fullPage = false }) {
   const [filter, setFilter] = useState("All");
   const projects = [
     {
-      title: "Deep Learning-Based Speech Conversion Patent",
-      description:
-        "Patent: Deep Learning-Based Speech Conversion for Parkinsonian Dysarthria using a paired acoustic encoder–decoder framework with multi-vocoder speech reconstruction. Co-authored by 3 inventors.",
-      image: "/dysarthria-patent.jpg",
-      link: "#",
-      category: "AI&ML",
-      tags: ["Patent", "DeepLearning", "Speech", "Healthcare"],
-    },
-    {
       title: "FoodShare Platform",
       description:
         "Real-time food sharing platform with donor-recipient chat and live listings",
