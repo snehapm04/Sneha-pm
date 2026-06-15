@@ -37,7 +37,25 @@ export default function Achievements({ theme, textVariants }) {
       icon: <Trophy size={18} />,
     },
     {
-      title: "IEEE Conference Paper Acceptance",
+      title: "NPTEL Motivated Learner & Discipline Learner",
+      desc: (
+        <ul className="list-disc pl-5 space-y-1">
+          <li>
+            Recognized by <b>NPTEL (Jan–Apr 2025) & IITM</b> for consistent learning and active course participation.
+          </li>
+          <li>
+            Awarded the <b>Motivated Learner</b> and <b>Discipline Learner</b> badges.
+          </li>
+          <li>
+            Demonstrated commitment to continuous learning and academic excellence.
+          </li>
+        </ul>
+      ),
+      tag: "Recognition",
+      icon: <Users size={18} />,
+    },
+    {
+      title: "IEEE Conference Paper Published",
       desc: (
         <ul className="list-disc pl-5 space-y-1">
           <li>Paper accepted at <b>ICPSCN 2026 (IEEE Conference)</b>.</li>
@@ -76,7 +94,7 @@ export default function Achievements({ theme, textVariants }) {
           theme === "dark" ? "text-slate-400" : "text-slate-600"
         }`}
       >
-        Fellowships • Conferences
+        Fellowships • Conferences • Recognition
       </p>
 
       <div className="max-w-4xl mx-auto relative">

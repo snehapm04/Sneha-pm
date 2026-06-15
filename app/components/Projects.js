@@ -16,7 +16,15 @@ export default function Projects({ theme, textVariants, fullPage = false }) {
       category: "Featured Systems",
       tags: ["NextJS", "SocketIO", "FullStack"],
     },
-
+    {
+      title: "TranShip - Inventory Transfer System",
+      description:
+        "AI-driven inventory management platform for optimizing stock transfers across multiple stores with real-time tracking and geographic-based recommendations.",
+      image: "/inventory.jpg",
+      link: "https://tran-ship.vercel.app/",
+      category: "Featured Systems",
+      tags: ["NextJS", "MongoDB", "TailwindCSS", "JWT", "FullStack"],
+    },
     {
       title: "Customer Churn Prediction",
       description:
@@ -26,7 +34,15 @@ export default function Projects({ theme, textVariants, fullPage = false }) {
       category: "AI&ML",
       tags: ["Python", "ML", "NLP"],
     },
-
+    {
+      title: "QueryScout - Autonomous Research Agent",
+      description:
+        "AI-powered web research agent that autonomously browses, extracts, and validates information using independent evidence to generate trustworthy summaries with confidence scores.",
+      image: "/query_scout.jpg",
+      link: "#",
+      category: "Exploration...",
+      tags: ["LangGraph", "MCP", "Playwright", "Python", "AI Agents"],
+    },
     {
       title: "Next Word Prediction",
       description:
@@ -35,6 +51,15 @@ export default function Projects({ theme, textVariants, fullPage = false }) {
       link: "https://github.com/snehapm04/Next-Word-Prediction-using-LSTM",
       category: "AI&ML",
       tags: ["LSTM", "DeepLearning"],
+    },
+    {
+      title: "Smart Anganwadi Digital Ecosystem",
+      description:
+        "Offline-first PWA for Anganwadi workers that digitizes child growth monitoring, attendance tracking, and risk identification with automated synchronization and reduced storage usage.",
+      image: "/anganwadi.jpg",
+      link: "#",
+      category: "Featured Systems",
+      tags: ["React", "NodeJS", "PostgreSQL", "PWA", "Docker"],
     },
     {
       title: "Multimodal RAG Research Assistant",
